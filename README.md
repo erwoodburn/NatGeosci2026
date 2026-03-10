@@ -12,14 +12,22 @@ This repository contains the data and code associated with the paper:
 
 Contents & Usage
 ASO/: ​​Contains the bash and python scripts used to convert airborne snow observatory (ASO) data (ASO, 2023) in various data formats (georeferenced tiff file, NetCDF, UTM, and to latitude/longitude) then regrided to the ParFlow equivalent grid. Output data are in regrid_regll_data.zip and subsequently visualized and analyzed in plot_and_compare.py for Supplementary Figures A14 and A15. The wksht_ASO_comparison.xlsx spreadsheet is used to calculate the data for Supplementary Figure A16. 
+
 EcoSLIM/: Contains the scripts and input files to run the EcoSLIM particle tracking simulations (/run_scripts) and the post-processing python script (/plot_scripts/eco_agedist_plots.ipynb). 
+
 Jasechko et al./: Contains the jupyter notebook (Extract_Elevation.ipynb) to determine the outlet elevations of the 260 watersheds used in Jasechko et al. (2016), and the corresponding table, Table_S1_Watersheds_alt.csv. Used to create Supplementary Information Figure A2. 
 PLM_Wells/: Contains the QA/QC-ed groundwater level time series of the PLM-1 and PLM-6 Monitoring Wells from Faybishenko et al. (2023), reformatted to water years used for Supplementary Figures A19 and and A20. 
+
 ParFlow/: Contains the input files and run scripts to run ParFlow-CLM (/run_scripts), the python and tcl scripts to create and distribute the ParFlow forcing simulation files (/forcing), and various scripts and intermediary files to analyze the model outputs (/post_process).
+
 SQUIRE/: Contains the processing scripts and intermediary files for the Surface QUantitatIve pRecipitation Estimation (SQUIRE) data (Grover, 2023) used to generate Supplementary Figure A18. 
+
 USGS_Streamflow/: Contains the raw and gap-filled United States Geological Survey streamflow data (U.S. Geological Survey, 2026) used at the Almont station (site number 09112500). Gap-filling is performed in the R script with data from the Taylor station (site number 09110000). (/USGS_09112500_EAST_RIVER_AT_ALMONT_GAP_FILLED/code_almont_streamflow_gap_fill.Rmd).
+
 discharge/: Contains the gap-filled discharge data at the Watershed Function SFA East River pumphouse site (Newcomer et al., 2022) used to generate Supplementary Figure A13 and to compute hourly Nash-Sutcliffe model efficiency coefficients (NSE) in Table A4.
+
 snotel_and_flux_tower/: Contains the snow telemetry data (U.S. Department of Agriculture, 2024) from the Butte (site ID 380) and Schofield (site ID 737) stations, reformatted by water year, accessed with the snotelr R package. Used to create Supplementary Figure A17. Also contains the flux tower observational data (FluxTower_Pumphouse_ESS-DIVE.ET_only.h.txt) from Ryken et al. (2022) and sap flux transpiration data (MaxB_Transpiration_5Sites.daily_sums.h.txt) from Ryken (2021), used to create Supplementary Figures A22 and A23, respectively. 
+
 References
 > Airborne Snow Observatory, ASO (2023): accessed 2023-11-15 at https://data.airbornesnowobservatories.com/
 
